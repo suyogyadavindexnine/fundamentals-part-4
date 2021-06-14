@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leap Years</title>
+</head>
+<body>
+    <script>
+        function isLeapYear(year){
+            if (year%4==0) {
+                console.log(`${year} is a leap Year`);
+            }else if(year%100 == 0 && year%400 == 0){
+                console.log(`${year} is a leap Year`);
+            }else{
+                console.log(`${year} is NOT leap Year`);
+            }
+        }
+        isLeapYear(2000);
+        isLeapYear(1985);
+    </script>
+</body>
+</html>
